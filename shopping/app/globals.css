@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+.bgone {
+  @apply bg-color1 dark:bg-color2 !important;
+}
+
+.textone {
+  @apply text-color2 dark:text-color1 !important;
+}
+
+.validationLogin {
+  @apply text-color3 dark:text-color3 !important;
+}
+
+.borderone {
+  @apply border-slate-300 dark:border-slate-500
+}
+
+.skecolor {
+  @apply bg-slate-500 dark:bg-slate-100 !important;
+}
