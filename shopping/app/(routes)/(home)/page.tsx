@@ -6,8 +6,10 @@ export default function Home() {
   return (
     <>
       <Slider />
-      <CategoryList />
-      <ProductList />
+      <div className="items-center justify-center flex flex-col">
+        <CategoryList />
+        <ProductList />
+      </div>
     </>
   );
 }
