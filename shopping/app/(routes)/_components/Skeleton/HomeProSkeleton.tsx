@@ -9,7 +9,7 @@ const HomeProSkeleton = () => {
         <Skeleton className="skecolor w-64 h-10" />
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-8 mb-8">
-        {Array.from({ length: 7 }).map((_, index) => (
+        {Array.from({ length: 8 }).map((_, index) => (
           <ProductItemSkeleton key={index} />
         ))}
       </div>
