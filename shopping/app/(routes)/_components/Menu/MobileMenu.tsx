@@ -17,7 +17,7 @@ const MobileMenu = ({ categories }: MobileMenuProps) => {
       <SheetContent className="bgone">
         <div className="flex flex-col space-y-5 mt-8">
           {categories.map((category) => (
-            <Link href={`/category/` + category.slug} key={category.id}>
+            <Link href={`/search?category=` + category.slug} key={category.id}>
               {category.name}
             </Link>
           ))}
