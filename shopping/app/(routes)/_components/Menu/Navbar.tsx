@@ -52,7 +52,10 @@ const Navbar = () => {
             <NavSkeleton />
           ) : (
             categories.map((category) => (
-              <Link href={`/category/` + category.slug} key={category.id}>
+              <Link
+                href={`/search?category=` + category.slug}
+                key={category.id}
+              >
                 {category.name}
               </Link>
             ))
